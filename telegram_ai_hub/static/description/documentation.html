@@ -3,11 +3,27 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Telegram AI Hub — Installation and User Guide</title>
+  <title>Telegram AI Hub &mdash; Installation and User Guide</title>
 </head>
-<body>
-  <h1>Telegram AI Hub — Installation and User Guide</h1>
-  <p><strong>Support:</strong> contact@kone-adama.com · WhatsApp: +212 781 488 538</p>
+<body style="max-width:1000px;margin:0 auto;padding:40px 24px;font-family:Arial,sans-serif;color:#0F2234;line-height:1.6;background:#FFFFFF;">
+  <div style="background:#0F2234;color:#FFFFFF;padding:36px;border-radius:18px;margin-bottom:30px;">
+    <p style="color:#5BC0EB;font-weight:bold;margin:0;">OFFICIAL ENGLISH DOCUMENTATION</p>
+    <h1 style="color:#FFFFFF;margin:8px 0 12px;">Telegram AI Hub &mdash; Installation and User Guide</h1>
+    <p style="color:#D8E7F1;margin:0;">Installation, Telegram connection, AI configuration, employee authorization, daily use and troubleshooting.</p>
+  </div>
+  <p><strong>Support:</strong> <a href="mailto:kadama328@gmail.com">kadama328@gmail.com</a> &middot; WhatsApp: <a href="https://wa.me/212781488538">+212 781 488 538</a> &middot; Website: <a href="https://odoo.kone-adama.com">odoo.kone-adama.com</a></p>
+
+  <div style="background:#F2F9FD;border:1px solid #CDEBFA;padding:24px;border-radius:14px;margin:28px 0;">
+    <h2 style="margin-top:0;color:#168AC5;">Quick navigation</h2>
+    <ol>
+      <li>Check the requirements and install the module.</li>
+      <li>Create the Telegram bot with the official BotFather.</li>
+      <li>Run the Odoo setup assistant and install the webhook.</li>
+      <li>Configure the customer-controlled AI provider.</li>
+      <li>Authorize employees using permanent Telegram numeric IDs.</li>
+      <li>Validate the first requests, actions, voice message and handover.</li>
+    </ol>
+  </div>
 
   <h2>1. Requirements</h2>
   <ul>
@@ -71,13 +87,22 @@
     <li>“What appointments do I have this week?”</li>
   </ul>
 
-  <h2>8. Voice messages</h2>
+  <h2>8. Supported business areas</h2>
+  <ul>
+    <li><strong>Contacts and CRM:</strong> search contacts, create contacts, inspect opportunities and create approved CRM records.</li>
+    <li><strong>Sales:</strong> list quotations and orders, inspect order details and retrieve order lines.</li>
+    <li><strong>Accounting:</strong> list invoices, inspect totals, payment status and detailed invoice lines according to Odoo permissions.</li>
+    <li><strong>Inventory and operations:</strong> search products, review available quantities and request supported operational summaries.</li>
+    <li><strong>Calendar:</strong> retrieve supported appointments and upcoming activities.</li>
+  </ul>
+
+  <h2>9. Voice messages</h2>
   <p>Send a Telegram voice note as you would send a text request. The configured transcription model converts the audio to text, and the assistant processes the resulting request with the same access controls.</p>
 
-  <h2>9. Human handover</h2>
+  <h2>10. Human handover</h2>
   <p>When a request needs manual intervention, transfer the conversation to an Odoo operator. The operator can review the history, reply, close the conversation or resume automated handling.</p>
 
-  <h2>10. Troubleshooting</h2>
+  <h2>11. Troubleshooting</h2>
   <h3>The bot does not answer</h3>
   <ul>
     <li>Test the Telegram token.</li>
@@ -99,7 +124,27 @@
     <li>Check the message error and AI tool audit information.</li>
   </ul>
 
-  <h2>11. Installation assistance</h2>
+  <h2>12. Go-live validation checklist</h2>
+  <ul>
+    <li>The Telegram connection test returns the bot identity.</li>
+    <li>The webhook test reports a valid public HTTPS endpoint.</li>
+    <li>The AI provider connection test succeeds.</li>
+    <li>An authorized employee can retrieve only permitted Odoo information.</li>
+    <li>A controlled creation action produces the expected Odoo record.</li>
+    <li>A voice message is transcribed when a transcription model is configured.</li>
+    <li>A conversation can be transferred to and resumed from a human operator.</li>
+  </ul>
+
+  <h2>13. Security recommendations</h2>
+  <ul>
+    <li>Never publish the Telegram bot token or AI API key.</li>
+    <li>Use a valid HTTPS certificate and keep Odoo security updates current.</li>
+    <li>Grant only the Telegram capabilities and Odoo groups required by each employee.</li>
+    <li>Review conversation errors and audit history regularly.</li>
+    <li>Immediately revoke and replace any credential suspected of exposure.</li>
+  </ul>
+
+  <h2>14. Installation assistance</h2>
   <p>ResilientByte Maroc accompanies customers during initial installation and configuration. Contact us after purchase with the Odoo version, deployment type and preferred availability. Never send production passwords or API keys in a public message.</p>
 </body>
 </html>
