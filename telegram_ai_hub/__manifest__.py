@@ -1,14 +1,14 @@
 {
     "name": "Telegram AI Hub",
     "summary": "Secure Telegram AI assistant for Odoo business operations",
-    "version": "19.0.2.0.12",
+    "version": "19.0.2.0.13",
     "category": "Productivity",
     "license": "OPL-1",
     "price": 150.0,
     "currency": "USD",
     "author": "ResilientByte Maroc",
     "website": "https://kone-adama.com",
-    "support": "contact@kone-adama.com",
+    "support": "kadama328@gmail.com",
     "depends": [
         "base",
         "mail",
