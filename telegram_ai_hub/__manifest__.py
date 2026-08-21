@@ -1,7 +1,7 @@
 {
     "name": "Telegram AI Hub",
     "summary": "Secure Telegram AI assistant for Odoo business operations",
-    "version": "19.0.2.0.10",
+    "version": "19.0.2.0.11",
     "category": "Productivity",
     "license": "OPL-1",
     "price": 150.0,
